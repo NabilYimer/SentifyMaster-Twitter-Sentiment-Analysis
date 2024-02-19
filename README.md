@@ -7,7 +7,7 @@ SentifyMaster employs natural language processing (NLP) techniques and machine l
 
 ## Project Structure
 
-- **`SentifyMaster.ipynb`:** Jupyter Notebook containing the core implementation of the sentiment analysis model.
+- **`Sentiment_Analysis.ipynb`:** Jupyter Notebook containing the core implementation of the sentiment analysis model.
   
 - **`data/`:** Directory containing the dataset (`sentiments.csv`) used for training and evaluation. The data is sourced from Kaggle and is included in the repository.
 
