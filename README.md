@@ -1,4 +1,4 @@
-# SentifyMaster: Sentiment Analysis using Twitter's API
+# SentifyMaster: Sentiment Analysis 
 
 
 ## Overview
