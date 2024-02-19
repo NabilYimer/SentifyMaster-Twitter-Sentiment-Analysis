@@ -28,6 +28,8 @@ SentifyMaster employs natural language processing (NLP) techniques and machine l
 
 The performance of the sentiment analysis model is evaluated using metrics such as precision, recall, and F1-score. Additionally, a confusion matrix is generated to visualize the model's performance.
 
+![confusion_matrix](https://github.com/NabilYimer/SentifyMaster-Twitter-Sentiment-Analysis-using/assets/70453045/27b242c8-c610-4ea1-a9e9-ecaa8aec162b)
+
 ## Contributing
 
 Contributions to SentifyMaster are welcome! Whether you're interested in fixing a bug, adding a new feature, or improving the project documentation, we'd love to have your help.
