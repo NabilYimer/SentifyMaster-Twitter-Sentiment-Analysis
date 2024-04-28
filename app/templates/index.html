@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+    <title>Sentify: Tweet sentiment</title>
+    <style>
+        /* Define the style for the container */
+
+        
+        /* Style for the box */
+        .box {
+            background-color: #3e3f40;
+            border-radius: 10px;
+            border: 1px solid #e6e6e6;
+            width: 505px; /* Adjust the width as needed */
+            height:50px;
+            margin: auto;
+        }
+        
+        /* Style for the input text box */
+        input[type="text"] {
+            width: 100%; /* Make it full width */
+            height: auto;
+            font-size: 14px; /* Adjust the font size */
+            color: black; /* Text color */
+            padding: 10px; /* Add padding */
+            box-sizing: border-box; /* Ensure padding and border are included in the width */
+            margin-top: 10px; /* Add some top margin */
+        }
+
+        /* Style for the submit button */
+        input[type="submit"] {
+            background-color: #202121;
+            color: white;
+            padding: 10px 26px;
+            border: none;
+            border-radius: 20px;
+            margin: 7px;
+            cursor: pointer;
+        }
+
+        /* Style for the submit button on hover */
+        input[type="submit"]:hover {
+            background-color: #484a4a;
+        }
+        
+        /* Style for the paragraph */
+        p {
+            margin-top: 0; /* Remove top margin */
+            margin-bottom: 40px; /* Add space after the paragraph */
+
+        }
+
+        /* Style for the upload media text */
+        .tweet-text {
+            font-size: 14px; /* Adjust the font size */
+            height: auto;
+            resize: vertical; /* Allow vertical resizing */
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <center>
+        <h1> Tweet Emotion recognition</h1>
+        <p>The aim of this project is to classify the sentiment of tweets obtained through Twitter's API.  <br>
+            It preprocesses the text data, extracts features using CountVectorizer, handles imbalanced data,   <br>
+            and performs classification Support Vector Machine (SVM).
+        </p>
+        <form action="/" method="POST" class="box">
+            <input name="tweet" type="text" id="txtid" class="tweet-text" placeholder="Type your Tweet"> 
+            <input type="submit" value="Tweet">
+        </form>
+        {% if predicted %}
+        <h2 style= "margin-top: 80px;" >Result</h2>
+        <h3>{{ predicted }}</h3>
+        {% endif %}
+    </center>
+</body>
+</html>

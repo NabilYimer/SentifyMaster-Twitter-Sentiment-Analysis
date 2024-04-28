@@ -5,6 +5,17 @@
 
 SentifyMaster employs natural language processing (NLP) techniques and machine learning algorithms to classify the sentiment of tweets obtained through Twitter's API. It preprocesses the text data, extracts features using CountVectorizer, handles imbalanced data, and performs classification using Support Vector Machine (SVM).
 
+## Table of Content
+- [Video Demo](#Video-Demo)
+- [Project Structure](#Project-Structure)
+- [Features](#Features)
+- [Evaluation](#Evaluation)
+- [Usage](#Usage)
+
+## Video Demo
+ ...
+
+ 
 ## Project Structure
 
 - **`Sentiment_Analysis.ipynb`:** Jupyter Notebook containing the core implementation of the sentiment analysis model.

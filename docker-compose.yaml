@@ -1,0 +1,10 @@
+version: '3'
+
+
+services:
+  sentify-flask:
+    build: ./
+    ports:
+      - "8080:8080"
+
+      
