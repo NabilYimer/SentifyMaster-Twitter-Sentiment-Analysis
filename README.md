@@ -58,8 +58,8 @@ Let's collaborate and make SentifyMaster even more powerful! 🚀
 1. **Clone the Repository:**
 
     ```bash
-  -  git clone https://github.com/NabilYimer/SentifyMaster-Twitter-Sentiment-Analysis.git
-  - cd SentifyMaster-Twitter-Sentiment-Analysis.git
+    git clone https://github.com/NabilYimer/SentifyMaster-Twitter-Sentiment-Analysis.git
+   cd SentifyMaster-Twitter-Sentiment-Analysis.git
     ```
 
 2. **Run the application:**
