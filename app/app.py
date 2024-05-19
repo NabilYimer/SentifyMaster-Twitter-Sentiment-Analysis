@@ -6,41 +6,30 @@ import logging
 
 app = Flask(__name__)
 
-# Configure logging
-logging.basicConfig(level=logging.INFO)
 
-# Get the logger
-logger = logging.getLogger(__name__)
+# Append the model directory to the system path
+sys.path.append(os.path.join(app.root_path, '../model'))
 
-# Log the root path
-logger.info("Root path: %s", app.root_path)
-
-
-app.root_path = "/usr/app/src/model"
-
-# Log the updated root path
-logger.info("Updated root path: %s", app.root_path)
-
+# Import the SentimentAnalyzer class from sentify module
 from sentify import SentimentAnalyzer
 
-app.root_path = os.getcwd()
 
 @app.route("/" , methods=["GET"])
 def home():
     return render_template("index.html")
 
 @app.route("/", methods=["POST"])        
-def predict():
+def predict(): 
     if "tweet" not in request.form:
         return "Input a valid tweet"
     
     file = request.form["tweet"]    
     predicted = get_predictions(file)
-    return render_template("index.html" , predicted = "Emotion: {}".format(predicted)  )
+    return render_template("index.html" , predict = "Emotion: {}".format(predicted)  )
 
 def get_predictions(tweet:str): 
-    sys.path.append("./usr/app/src/")
-    SentimentAnalyzer = joblib.load("./model/sentify.pkl")
+    model_path = os.path.join(app.root_path, '../model/sentify.pkl')
+    SentimentAnalyzer = joblib.load(model_path)
     result = SentimentAnalyzer.predict(tweet)[0]
     
     emotions = { 
