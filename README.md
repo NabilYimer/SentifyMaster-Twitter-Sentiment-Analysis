@@ -6,14 +6,18 @@
 SentifyMaster employs natural language processing (NLP) techniques and machine learning algorithms to classify the sentiment of tweets obtained through Twitter's API. It preprocesses the text data, extracts features using CountVectorizer, handles imbalanced data, and performs classification using Support Vector Machine (SVM).
 
 ## Table of Content
-- [Video Demo](#Video-Demo)
+- [Video Demo][#Video-Demo]
 - [Project Structure](#Project-Structure)
 - [Features](#Features)
 - [Evaluation](#Evaluation)
 - [Usage](#Usage)
 
-## Video Demo
- ...
+# Video Demo
+
+
+
+https://github.com/NabilYimer/SentifyMaster-Twitter-Sentiment-Analysis/assets/70453045/54c32945-63a6-4087-a695-de0a01cd10f8
+
 
  
 ## Project Structure
@@ -54,14 +58,15 @@ Let's collaborate and make SentifyMaster even more powerful! 🚀
 1. **Clone the Repository:**
 
     ```bash
-    git clone https://github.com/NabilYimer/SentifyMaster-Twitter-Sentiment-Analysis.git
+  -  git clone https://github.com/NabilYimer/SentifyMaster-Twitter-Sentiment-Analysis.git
+  - cd SentifyMaster-Twitter-Sentiment-Analysis.git
     ```
 
-2. **Install Dependencies:**
+2. **Run the application:**
 
     ```bash
-    pip install -r requirements.txt
+    docker-compose up
     ```
 
-    This will install all the necessary dependencies for running the project.
+    This will run all the necessary commands for running the project.
 
